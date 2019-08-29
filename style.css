@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: linear-gradient(#c21500, #ffc500);
+  color: white;
+  font-family: "Roboto", sans-serif;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.location {
+  height: 30vh;
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.location-timezone {
+  font-size: 40px;
+  text-transform: capitalize;
+  font-weight: 400;
+}
+.temperature {
+  width: 50%;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.degree-section {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.degree-section h2 {
+  font-size: 40px;
+}
+.degree-section span {
+  margin: 10px;
+  font-size: 30px;
+}
+
+@media screen and (max-width: 800px) {
+  .location,
+  .temperature {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .location,
+  .temperature {
+    width: 100%;
+  }
+}
